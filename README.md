@@ -8,8 +8,8 @@ This can be used to play individual videos as well as whole playlists.
 With this configuration you can tweak the quality of the video that you want to watch on VLC which can actually be beneficial in terms of performance and power consumption and as well as provide you all the functionality that vlc offers as compared to watching videos in web browser.
 
 ## Features
-> - Play Youtube videos
-> - Play whole youtube playlists
+> - Play YouTube videos
+> - Play whole YouTube playlists
 > - Play live streams
 
 ## Dependency
