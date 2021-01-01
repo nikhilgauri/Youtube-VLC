@@ -7,6 +7,11 @@ This can be used to play individual videos as well as whole playlists.
 > VLC itself can get the stream URL and play the video on its own, but it chooses that stream which contains both, video as well as audio. And most of the times this is lower than the best quality available which can be disappoiniting at times.<BR>
 With this configuration you can tweak the quality of the video that you want to watch on VLC which can actually be beneficial in terms of performance and power consumption and as well as provide you all the functionality that vlc offers as compared to watching videos in web browser.
 
+## Features
+> - Play Youtube videos
+> - Play whole youtube playlists
+> - Play live streams
+
 ## Dependency
 > **[youtube-dl](https://github.com/ytdl-org/youtube-dl/)**
 
@@ -23,4 +28,6 @@ With this configuration you can tweak the quality of the video that you want to 
 	```
 	/usr/share/vlc/lua/playlist/
 	```
-- Rename or remove the existing youtube.luac so that it is not used to parse the URL.
+- Edit the max_video_quality variable to your desired quality.
+- Rename or remove the existing `youtube.luac` so that it is not used to parse the URL.
+- Open youtube links in VLC.
