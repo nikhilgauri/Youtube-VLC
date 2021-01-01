@@ -1,5 +1,5 @@
 # Youtube-VLC
-Use youtube-dl to stream Youtube videos on VLC Media Player (any quality)
+Use youtube-dl to stream Youtube videos on VLC Media Player (any quality). <BR>
 This can be used to play individual videos as well as whole playlists.
 
 ## Need
