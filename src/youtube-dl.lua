@@ -38,7 +38,7 @@ function parse()
 	    local video_format_id = ""
 
 	    local audio_url = nil
-	    local max_abr_found = 0
+	    local max_asr_found = 0
 	    local audio_format_id = ""
 
     	if json.formats then
@@ -50,14 +50,14 @@ function parse()
 		          		max_video_found = format.height
 		          		video_format_id = format.format_id
 		          		video_url = format.url
-		          		if format.acodec ~= (nil or "none") and format.abr>max_abr_found then
+		          		if format.acodec ~= (nil or "none") and format.asr>max_asr_found then
 		          			audio_format_id = format.format_id
 		          		end
 		        	end
 
 		        	-- capturing audio link, link should contain audio, and also no video, otherwise will play a 3D file
-		        	if format.acodec ~= (nil or "none") and format.abr>max_abr_found and format.vcodec == (nil or "none") then
-		         		max_abr_found = format.abr
+		        	if format.acodec ~= (nil or "none") and format.asr>max_asr_found and format.vcodec == (nil or "none") then
+		         		max_asr_found = format.asr
 		         		audio_format_id = format.format_id
 		          		audio_url = format.url
 		        	end
